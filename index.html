@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator Bootstrap</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+rel="stylesheet">
+<script src="/script.js" defer></script>
+</head>
+<body class="bg-secondary">
+    <br>
+    <div class="contaner d-flex min-vh-100 align-items-center ">
+    <div class="container-fluid text-center border border-5 border-dark  w-25 rounded-5 bg-light"><br>
+    <h1 class="text-primary fw-bolder ">Age Calculator </h1><br>
+    <label class="fw-bolder fs-5 ">Select Date Of Birth : </label>
+    <input type="date" id="dob"><br>
+    <span id = "message" style="color:red"> </span> <br> 
+    <button type="submit" onclick = "ageCalculator()" class="btn btn-secondary fs-5 border border-2 border-secondary rounded-2 ">Calculate Age</button>
+    <button type="button" id="clear"class="btn btn-secondary fs-5 border border-2 border-secondary rounded-2">Reset</button><br><br>
+    <p class="fs-5 fw-bolder text-danger ">Calculated age is: <span id="result">--</span></p> 
+    </div>
+    </div>
+</body>
+</html>
